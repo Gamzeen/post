@@ -1,9 +1,8 @@
 #post ve token ı sorunsuz yapıyor
 import requests
-#http://api-gw.aes.cmvteknoloji.com/
-#url = "http://213.155.103.168:9080/auth/public/login"
-url = "http://api-gw.aes.cmvteknoloji.com/public/login"
-url1 = "http://api-gw.aes.cmvteknoloji.com/secured/card/control"
+
+url = "http://asdadasd.com/public/login"
+url1 = "http://adsasdasd.com/secured/card/control"
 
 #url1 = "http://213.155.103.168:19080/secured/card/control"
 
@@ -11,12 +10,12 @@ def request_token():
     #liste=kullanici_giris()
     #username=liste[0]
     #password=liste[1]
-    username="kutsal"
-    password="kutsal"
+    username="xxxxx"
+    password="xxxxx"
     
     payload = "{ \n    \"username\": \""+username+"\",\n    \"password\": \""+password+"\"\n}"
     headers = {
-        'Cmv-Application-Name': 'ReDesk',
+        'Application-Name': 'Xxxxx',
         'Content-Type': 'application/json'
         }
     response = requests.request("POST", url, headers=headers, data = payload)
